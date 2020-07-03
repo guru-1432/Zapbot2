@@ -21,7 +21,7 @@ print(id_generate())
 
 
 '''
-    webhook = 'https://hooks.slack.com/services/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'
+    
     if msgvalues[0]=='success':       
         message=f'**** Report from {date.today()} **** \n\t\tStatus = Success\n\t\tStatus time = {datetime.now()} \n\t\tImportid = {msgvalues[1]}'
         message = {'text':message}
@@ -37,7 +37,7 @@ print(id_generate())
         from slacker import Slacker
 from datetime import datetime
 import json
-slack = Slacker('xoxb-1192530816000-1168703019634-iptS86XpQZ5l9ecHJ3jqKoe8')
+
 message = f'The dataload from this {datetime.now()} is success\n '
 slack.chat.post_message('#learning',message)
 '''
